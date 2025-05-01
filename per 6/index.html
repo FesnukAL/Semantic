@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <!--  -->
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="img/logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#">Produk</a></li>
+                <li><a href="#">Terbaru</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Get'S Sneaker</br>Get's<span>Panda's</span></h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam delectus pariatur quod commodi quia
+                    ex distinctio cumque architecto? Temporibus id soluta aut quidem aliquid facilis tenetur saepe rem
+                    exercitationem dignissimos.</p>
+                    <a href="">Pesan Sekarang</a>
+            </div>
+            <div class="imgbox">
+                <img src="img/sepatu1.png" alt="" class="sneaker">
+            </div>
+        </div>
+      <ul class="thumb">
+             <li> <img src="img/thumb1.png" alt="" onclick="imgSlider('img/sepatu1.png'); changeColor('#d4e8fa')"></li>
+             <li> <img src="img/thumb2.png" alt="" onclick="imgSlider('img/sepatu2.png'); changeColor('#d4e8fa')"></li>
+             <li> <img src="img/thumb3.png" alt="" onclick="imgSlider('img/sepatu3.png'); changeColor('#d4e8fa')"></li>
+      </ul>
+        <ul class="sosmed">
+            <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.sneaker').src = anything;
+        }
+            function changeColor(color) {
+               const circle = document.querySelector('.circle');
+               circle.style.background = color;
+            }
+    </script>
+</body>
+
+</html>
