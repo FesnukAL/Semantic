@@ -27,17 +27,17 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam delectus pariatur quod commodi quia
                     ex distinctio cumque architecto? Temporibus id soluta aut quidem aliquid facilis tenetur saepe rem
                     exercitationem dignissimos.</p>
-                    <a href="">Pesan Sekarang</a>
+                <a href="">Pesan Sekarang</a>
             </div>
             <div class="imgbox">
                 <img src="img/sepatu1.png" alt="" class="sneaker">
             </div>
         </div>
-      <ul class="thumb">
-             <li> <img src="img/thumb1.png" alt="" onclick="imgSlider('img/sepatu1.png'); changeColor('#d4e8fa')"></li>
-             <li> <img src="img/thumb2.png" alt="" onclick="imgSlider('img/sepatu2.png'); changeColor('#d4e8fa')"></li>
-             <li> <img src="img/thumb3.png" alt="" onclick="imgSlider('img/sepatu3.png'); changeColor('#d4e8fa')"></li>
-      </ul>
+        <ul class="thumb">
+            <li> <img src="img/thumb1.png" alt="" onclick="imgSlider('img/sepatu1.png'); changeColor('#d4e8fa')"></li>
+            <li> <img src="img/thumb2.png" alt="" onclick="imgSlider('img/sepatu2.png'); changeColor('#d4e8fa')"></li>
+            <li> <img src="img/thumb3.png" alt="" onclick="imgSlider('img/sepatu3.png'); changeColor('#d4e8fa')"></li>
+        </ul>
         <ul class="sosmed">
             <li><a href="#"><img src="img/facebook.png" alt=""></a></li>
             <li><a href="#"><img src="img/instagram.png" alt=""></a></li>
@@ -48,10 +48,10 @@
         function imgSlider(anything) {
             document.querySelector('.sneaker').src = anything;
         }
-            function changeColor(color) {
-               const circle = document.querySelector('.circle');
-               circle.style.background = color;
-            }
+        function changeColor(color) {
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
     </script>
 </body>
 
