@@ -1,1 +1,0 @@
-print("ini contoh yya wkkk");
