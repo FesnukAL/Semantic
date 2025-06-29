@@ -45,8 +45,11 @@ document.write("<br>");
 document.write("<br>4. Perulangan While");
 let j = 10;
 while (j >=1){
-   document.write("<br>Perulangan While: ", j);
-   console.log(" Bilangan ini adalah : ", j);
+    if (j % 2 === 0) {  // Jika sisa bagi 2 tidak ada sisa akan genap
+        document.write("<br>bilangan ini Genap :",  j);
+        console.log("Bilangan ini Genap :",  j);
+        
+    }
    j=j-2;
 }
 document.write("<br><br>");
@@ -54,8 +57,17 @@ document.write("<br><br>");
 document.write("5. Perulangan Do While");
 let aa=5;
 do{
-
-document.write("<br> Perulangan do while: ", aa);
+    if (aa % 2 === 0) {  // Jika sisa bagi 2 tidak ada sisa akan genap
+        document.write("<br>bilangan ini Genap :",  aa);
+        console.log("Bilangan ini Genap :",  aa);
+        
+    }
+    else { // Lain Jika sisa bagi 2 ada sisa akan maka akan ganjil 
+        
+        document.write("<br> Bilangan ini Ganjil : ",  aa);
+        console.log("Bilangan ini Ganjil :",  aa);
+        
+    }
     aa=aa+2;
 }
 while (aa <= 15) 
